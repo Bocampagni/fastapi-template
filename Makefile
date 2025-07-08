@@ -28,6 +28,7 @@ lint:
 format:
 	uv run ruff format .
 	uv run ruff check --fix .
+	uv run ruff check --select I --fix .
 
 docker-build:
 	docker build -t ${APP_NAME} .
